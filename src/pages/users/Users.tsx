@@ -36,7 +36,7 @@ const columns: GridColDef[] = [
   {
     field: "phone",
     headerName: "Phone",
-    width: 200,
+    width: 150,
     editable: true,
   },
 
