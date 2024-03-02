@@ -1,13 +1,15 @@
 import {
   TransitionGroup_default,
   Transition_default,
-  _extends,
   _objectWithoutPropertiesLoose,
   clsx_default,
-  init_extends,
   require_prop_types,
   require_react_is
-} from "./chunk-IC4ICZZO.js";
+} from "./chunk-DFC2B4TC.js";
+import {
+  _extends,
+  init_extends
+} from "./chunk-ENRAZJPN.js";
 import {
   require_react_dom
 } from "./chunk-W35RGOJH.js";

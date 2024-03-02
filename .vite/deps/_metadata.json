@@ -1,47 +1,56 @@
 {
-  "hash": "e9696cbc",
-  "browserHash": "410dc96d",
+  "hash": "9a41ad5c",
+  "browserHash": "271bd13f",
   "optimized": {
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "41d9b6f8",
+      "fileHash": "a6664ef1",
       "needsInterop": true
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "ac14fc89",
+      "fileHash": "43f3da73",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "a512579f",
+      "fileHash": "12c38242",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.js",
       "file": "react-router-dom.js",
-      "fileHash": "7e861ce3",
+      "fileHash": "0977c7f9",
       "needsInterop": false
     },
     "recharts": {
       "src": "../../node_modules/recharts/es6/index.js",
       "file": "recharts.js",
-      "fileHash": "443e59e5",
+      "fileHash": "0c25baa2",
       "needsInterop": false
     },
     "@mui/x-data-grid": {
       "src": "../../node_modules/@mui/x-data-grid/index.js",
       "file": "@mui_x-data-grid.js",
-      "fileHash": "ff7f99ff",
+      "fileHash": "efb433e6",
+      "needsInterop": false
+    },
+    "react-query": {
+      "src": "../../node_modules/react-query/es/index.js",
+      "file": "react-query.js",
+      "fileHash": "e99dc7ab",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-IC4ICZZO": {
-      "file": "chunk-IC4ICZZO.js"
+    "chunk-DFC2B4TC": {
+      "file": "chunk-DFC2B4TC.js"
+    },
+    "chunk-ENRAZJPN": {
+      "file": "chunk-ENRAZJPN.js"
     },
     "chunk-W35RGOJH": {
       "file": "chunk-W35RGOJH.js"
