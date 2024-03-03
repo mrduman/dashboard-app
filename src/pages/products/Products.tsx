@@ -3,7 +3,8 @@ import DataTable from "../../components/dataTable/DataTable";
 import { useState } from "react";
 import Add from "../../components/add/Add";
 import "./products.scss";
-import { useQuery } from "react-query";
+import { products } from "../../data";
+// import { useQuery } from "react-query";
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90 },
@@ -56,11 +57,11 @@ const columns: GridColDef[] = [
 const Products = () => {
   const [open, setOpen] = useState(false);
 
-  const { isLoading, data } = useQuery({
-    queryKey: ["allproducts"],
-    queryFn: () =>
-      fetch("http://localhost:8800/api/products").then((res) => res.json()),
-  });
+  // const { isLoading, data } = useQuery({
+  //   queryKey: ["allproducts"],
+  //   queryFn: () =>
+  //     fetch("http://localhost:8800/api/products").then((res) => res.json()),
+  // });
 
   return (
     <div className="products">
@@ -68,11 +69,12 @@ const Products = () => {
         <h1>Products</h1>
         <button onClick={() => setOpen(true)}>Add New Products</button>
       </div>
-      {isLoading ? (
+      {/* {isLoading ? (
         "isLoading..."
       ) : (
         <DataTable slug="products" columns={columns} rows={data} />
-      )}
+      )} */}
+      <DataTable slug="products" columns={columns} rows={products} />
       {open && <Add columns={columns} slug="users" setOpen={setOpen} />}
     </div>
   );

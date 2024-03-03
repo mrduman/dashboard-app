@@ -4,7 +4,7 @@ import { userRows } from "../../data";
 import "./users.scss";
 import { useState } from "react";
 import Add from "../../components/add/Add";
-import { useQuery } from "react-query";
+// import { useQuery } from "react-query";
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90 },
@@ -59,11 +59,11 @@ const columns: GridColDef[] = [
 const Users = () => {
   const [open, setOpen] = useState(false);
 
-  const { isLoading, data } = useQuery({
-    queryKey: ["allusers"],
-    queryFn: () =>
-      fetch("http://localhost:8800/api/users").then((res) => res.json()),
-  });
+  // const { isLoading, data } = useQuery({
+  //   queryKey: ["allusers"],
+  //   queryFn: () =>
+  //     fetch("http://localhost:8800/api/users").then((res) => res.json()),
+  // });
 
   return (
     <div className="users">
@@ -71,11 +71,13 @@ const Users = () => {
         <h1>Users</h1>
         <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
-      {isLoading ? (
+      {/* {isLoading ? (
         "isLoading..."
       ) : (
         <DataTable columns={columns} rows={data} slug="users" />
-      )}
+      )} */}
+
+      <DataTable columns={columns} rows={userRows} slug="users" />
 
       {open && <Add columns={columns} slug="users" setOpen={setOpen} />}
     </div>
