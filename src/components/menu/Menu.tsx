@@ -7,7 +7,7 @@ const Menu = () => {
     <div className="menu">
       {menu.map((item) => {
         return (
-          <div className="item">
+          <div className="item" key={item.id}>
             <span className="title">{item.title}</span>
             {item.listItems.map((listItem) => {
               return (
