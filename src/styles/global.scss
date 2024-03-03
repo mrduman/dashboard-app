@@ -30,10 +30,6 @@ a {
   @include lg {
     width: max-content;
   }
-
-  @include sm {
-    border-right: none;
-  }
 }
 
 .contentContainer {

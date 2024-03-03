@@ -1,3 +1,5 @@
+@import "../../styles//responsive.scss";
+
 .bigChart {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,9 @@
 
   h1 {
     font-size: 24px;
+    @include xxl {
+      font-size: 20px;
+    }
   }
 
   .chart {
