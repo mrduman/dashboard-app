@@ -1,3 +1,5 @@
+@import "../../styles//responsive.scss";
+
 .navbar {
   width: 100%;
   display: flex;
@@ -17,6 +19,12 @@
     padding: 10px;
     gap: 20px;
     align-items: center;
+
+    .icon {
+      @include lg {
+        display: none;
+      }
+    }
 
     .notification {
       position: relative;
