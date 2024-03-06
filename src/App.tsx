@@ -10,16 +10,29 @@ import "./styles/global.scss";
 import User from "./pages/user/User";
 import Product from "./pages/product/Product";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { useState } from "react";
+import "./styles/variables.scss";
 
 // Create a client
 const queryClient = new QueryClient();
 
 const Layout = () => {
+  const [mode, setMode] = useState("#222b3c");
+
   return (
-    <div className="main">
-      <Navbar />
+    <div
+      className="main"
+      style={{
+        background: mode,
+        color: `${mode === "#ddd" ? "#2a3447" : "#ddd"}`,
+      }}
+    >
+      <Navbar setMode={setMode} mode={mode} />
       <div className="container">
-        <div className="menuContainer">
+        <div
+          className="menuContainer"
+          style={{ background: "#222b3c", color: "#ddd" }}
+        >
           <Menu />
         </div>
         <div className="contentContainer">
@@ -28,7 +41,9 @@ const Layout = () => {
           </QueryClientProvider>
         </div>
       </div>
-      <Footer />
+      <div style={{ background: "#222b3c", color: "#ddd" }}>
+        <Footer />
+      </div>
     </div>
   );
 };

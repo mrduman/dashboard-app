@@ -55,5 +55,12 @@
         object-fit: cover;
       }
     }
+
+    .background-mode {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-right: 10px;
+    }
   }
 }
